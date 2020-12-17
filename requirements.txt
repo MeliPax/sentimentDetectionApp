@@ -4,4 +4,4 @@ numpy>=1.9.2
 pandas>=0.19
 streamlit>=0.52.1
 Keras==2.4.0
-regex
+regex==2020.6.8
