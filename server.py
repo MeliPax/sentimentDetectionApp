@@ -8,7 +8,6 @@ import tensorflow as tf
 import re
 from sklearn.model_selection import train_test_split
 
-
 model = tf.keras.models.load_model("model.sav")
 
 def remove_tags(text):
@@ -37,10 +36,8 @@ for txt in text:
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=45)
 
-
 tokenizer = Tokenizer(num_words=5000)
 tokenizer.fit_on_texts(X_train)
-
 
 def predict_sentiment(input_text):
     clean = clean_text(input_text)
